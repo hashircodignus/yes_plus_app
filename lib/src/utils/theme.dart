@@ -12,6 +12,7 @@ class AppTheme {
   static const Color iconColor = Color(0xff013B00);
   static const Color lightColor = Color(0xff696969);
   static const Color timeGreenColor = Color(0xff026E00);
+  static const Color tableContainerGreen = Color(0xff245624);
   static const Color timeYellowColor = Color(0xffE0B000);
   static const Color timeRedColor = Color(0xffAB0303);
 
@@ -20,6 +21,12 @@ class AppTheme {
 
   static TextStyle timeCardText = TextStyle(
       color: backColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 8.sp,
+      fontWeight: FontWeight.w400);
+
+  static TextStyle littleText = TextStyle(
+      color: textColor,
       fontFamily: montserratFont.fontFamily,
       fontSize: 8.sp,
       fontWeight: FontWeight.w400);
@@ -54,6 +61,12 @@ class AppTheme {
       fontSize: 14.sp,
       fontWeight: FontWeight.w300);
 
+  static TextStyle tableNoText = TextStyle(
+      color: backColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w400);
+
   static TextStyle tapText = TextStyle(
       color: iconColor,
       fontFamily: montserratFont.fontFamily,
@@ -61,6 +74,12 @@ class AppTheme {
       fontWeight: FontWeight.w500);
 
   static TextStyle bottomText = TextStyle(
+      color: backColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w500);
+
+  static TextStyle bottomBlackText = TextStyle(
       color: textColor,
       fontFamily: montserratFont.fontFamily,
       fontSize: 14.sp,
@@ -68,6 +87,12 @@ class AppTheme {
 
   static TextStyle buttonText = TextStyle(
       color: backColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w500);
+
+  static TextStyle buttonBlackText = TextStyle(
+      color: textColor,
       fontFamily: montserratFont.fontFamily,
       fontSize: 16.sp,
       fontWeight: FontWeight.w500);

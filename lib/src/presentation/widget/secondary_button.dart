@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/theme.dart';
 
-class ButtonWidget extends StatelessWidget {
+class SecondaryButtonWidget extends StatelessWidget {
   final void Function()? onPressed;
   final String buttonTextContent;
-  const ButtonWidget({required this.buttonTextContent,this.onPressed,
-    super.key,
+  final Color? color;
+  final TextStyle style;
+  const SecondaryButtonWidget({required this.buttonTextContent,this.onPressed,
+    super.key, this.color, required this.style,
   });
 
   @override
@@ -14,13 +16,14 @@ class ButtonWidget extends StatelessWidget {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        height: 56.h,
+        height: 39.h,
         width: double.infinity,
         decoration: BoxDecoration(
-            color: AppTheme.buttonColor,
+          border: Border.all(color: AppTheme.lightColor,width: 0.25),
+            color: color,
             borderRadius: BorderRadius.circular(8.r)
         ),
-        child: Center(child: Text(buttonTextContent,style: AppTheme.buttonText,)),
+        child: Center(child: Text(buttonTextContent,style: style)),
       ),
     );
   }
