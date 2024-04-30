@@ -86,7 +86,7 @@ class PaymentPage extends StatelessWidget {
       ),
       bottomNavigationBar: Padding(
         padding:  EdgeInsets.only(bottom: 50.h,left: 20.w,right: 20.w),
-        child: const ButtonWidget(buttonTextContent: 'Proceed'),
+        child: const ButtonWidget(buttonTextContent: 'Proceed', color: AppTheme.tableContainerGreen,),
       ),
     );
   }

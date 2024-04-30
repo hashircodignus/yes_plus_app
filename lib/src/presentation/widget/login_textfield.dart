@@ -5,12 +5,12 @@ import '../../utils/theme.dart';
 
 class LoginTextField extends StatelessWidget {
   final String titleText;
-  final Widget prefixIcon;
+  final Widget? prefixIcon;
   final Widget? suffixIcon;
   final bool? obscureText;
   const LoginTextField({
     required this.titleText,
-    super.key, required this.prefixIcon, this.suffixIcon,  this.obscureText,
+    super.key,  this.prefixIcon, this.suffixIcon,  this.obscureText,
   });
 
   @override

@@ -5,8 +5,9 @@ import '../../utils/theme.dart';
 class ButtonWidget extends StatelessWidget {
   final void Function()? onPressed;
   final String buttonTextContent;
+  final Color color;
   const ButtonWidget({required this.buttonTextContent,this.onPressed,
-    super.key,
+    super.key, required this.color,
   });
 
   @override
@@ -17,7 +18,7 @@ class ButtonWidget extends StatelessWidget {
         height: 56.h,
         width: double.infinity,
         decoration: BoxDecoration(
-            color: AppTheme.buttonColor,
+            color: color,
             borderRadius: BorderRadius.circular(8.r)
         ),
         child: Center(child: Text(buttonTextContent,style: AppTheme.buttonText,)),
