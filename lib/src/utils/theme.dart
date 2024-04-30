@@ -73,6 +73,12 @@ class AppTheme {
       fontSize: 14.sp,
       fontWeight: FontWeight.w300);
 
+  static TextStyle titleWhiteText = TextStyle(
+      color: backColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 14.sp,
+      fontWeight: FontWeight.w300);
+
   static TextStyle tableNoText = TextStyle(
       color: backColor,
       fontFamily: montserratFont.fontFamily,

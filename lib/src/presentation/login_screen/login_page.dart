@@ -63,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
                    ButtonWidget(buttonTextContent: 'Login',onPressed: (){
                     Navigator.pushReplacement(context, MaterialPageRoute(
                         builder: (context)=>const HomePage()));
-                  },),
+                  }, color: AppTheme.tableContainerGreen,),
                   SizedBox(height: 30.h,),
                   RichText(text: TextSpan(
                     text: "Doesn't have an account?  " ,style: AppTheme.titleText,

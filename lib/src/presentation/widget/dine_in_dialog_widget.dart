@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yes_plus/src/presentation/payment_screen/payment_page.dart';
+import 'package:yes_plus/src/presentation/print_bill_screen/print_bill_page.dart';
 import '../../utils/asset_resources.dart';
 import '../../utils/theme.dart';
 import '../home_screen/widget/grid_card.dart';
@@ -70,7 +71,10 @@ class _DineInDialogWidgetState extends State<DineInDialogWidget> {
                       const GridCard(icon: AssetResources.viewKOT,
                         text: 'View KOT',),
                       const GridCard(icon: AssetResources.moveTable, text: 'Move Table',),
-                       const GridCard(icon: AssetResources.printBill, text: 'Print Bill',),
+                        GridCard(icon: AssetResources.printBill, text: 'Print Bill', onTap: (){
+                         Navigator.push(context, MaterialPageRoute(builder: (context)=>const PrintBillPage()));
+                       },
+                       ),
                        GridCard(icon: AssetResources.printPay, text: 'Print & Pay',onTap: (){
     Navigator.push(context, MaterialPageRoute(builder: (context)=>const PaymentPage()));
     }),

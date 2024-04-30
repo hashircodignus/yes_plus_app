@@ -16,4 +16,5 @@ class AssetResources{
   static const cashIcon = "assets/images/cash.png";
   static const card = "assets/images/card.png";
   static const other = "assets/images/other_payment.png";
+  static const successLottie = "assets/animation/success_lottie.json";
 }
