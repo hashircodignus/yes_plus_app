@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yes_plus/src/presentation/widget/secondary_button.dart';
@@ -139,6 +138,9 @@ class _TableSeatDialogWidgetState extends State<TableSeatDialogWidget> {
             Padding(
               padding:  EdgeInsets.symmetric(horizontal: 75.w,vertical: 20.h),
               child:  SecondaryButtonWidget(buttonTextContent: 'Submit',
+              onPressed: (){
+                Navigator.pop(context);
+              },
               color: isSelected ? AppTheme.buttonColor : AppTheme.backColor, style:isSelected ? AppTheme.buttonText : AppTheme.buttonBlackText,
               ),
             )

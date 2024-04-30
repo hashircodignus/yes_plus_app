@@ -37,6 +37,12 @@ class AppTheme {
       fontSize: 10.sp,
       fontWeight: FontWeight.w400);
 
+  static TextStyle seatRedText = TextStyle(
+      color: timeRedColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 10.sp,
+      fontWeight: FontWeight.w400);
+
   static TextStyle smallText = TextStyle(
       color: iconColor,
       fontFamily: montserratFont.fontFamily,
@@ -45,6 +51,12 @@ class AppTheme {
 
   static TextStyle cardText = TextStyle(
       color: textColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 12.sp,
+      fontWeight: FontWeight.w400);
+
+  static TextStyle cardWhiteText = TextStyle(
+      color: backColor,
       fontFamily: montserratFont.fontFamily,
       fontSize: 12.sp,
       fontWeight: FontWeight.w400);
@@ -119,5 +131,11 @@ class AppTheme {
       color: backColor,
       fontFamily: montserratFont.fontFamily,
       fontSize: 20.sp,
+      fontWeight: FontWeight.w500);
+
+  static TextStyle largeNoText = TextStyle(
+      color: backColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 35.sp,
       fontWeight: FontWeight.w500);
 }
