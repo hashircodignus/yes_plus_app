@@ -34,7 +34,6 @@ class GridCard extends StatelessWidget {
                 )
               ]
             ),
-            height: 116.h,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
