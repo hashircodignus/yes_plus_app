@@ -8,9 +8,10 @@ class LoginTextField extends StatelessWidget {
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final bool? obscureText;
+  final TextInputType? keyboardType;
   const LoginTextField({
     required this.titleText,
-    super.key,  this.prefixIcon, this.suffixIcon,  this.obscureText,
+    super.key,  this.prefixIcon, this.suffixIcon,  this.obscureText, this.keyboardType,
   });
 
   @override
@@ -35,6 +36,7 @@ class LoginTextField extends StatelessWidget {
             height: 56.h,
             child: TextFormField(
               obscureText: obscureText ?? false,
+              keyboardType: keyboardType ?? TextInputType.name,
               obscuringCharacter: '*',
               cursorColor: AppTheme.textColor,
               style: AppTheme.blackTextButton,

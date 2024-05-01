@@ -41,7 +41,7 @@ class GridCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                Image.asset(icon,width: 34.w,height: 34.h,),
-                SizedBox(height: 20.h,),
+                SizedBox(height: 10.h,),
                 Text(text,style: textStyle ?? AppTheme.cardText,)
               ],
             ),

@@ -21,8 +21,6 @@ class CompletedTakeAwayWidget extends StatelessWidget {
             itemBuilder: (BuildContext context, int index){
               return Container(
                 padding: EdgeInsets.symmetric(horizontal: 15.w,vertical: 15.h),
-                height: 110.h,
-                width: double.infinity,
                 decoration: BoxDecoration(
                     color: AppTheme.backColor,
                     borderRadius: BorderRadius.circular(8.r),
