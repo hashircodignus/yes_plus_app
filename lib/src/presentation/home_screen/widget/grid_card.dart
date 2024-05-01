@@ -6,8 +6,10 @@ class GridCard extends StatelessWidget {
   final String icon;
   final String text;
   final Function()? onTap;
+  final Color? color;
+  final TextStyle? textStyle;
   const GridCard({
-    super.key, required this.icon, required this.text, this.onTap,
+    super.key, required this.icon, required this.text, this.onTap, this.color, this.textStyle,
   });
 
   @override
@@ -17,7 +19,7 @@ class GridCard extends StatelessWidget {
           onTap: onTap,
           child: Container(
             decoration: BoxDecoration(
-              color: AppTheme.backColor,
+              color: color ?? AppTheme.backColor,
                 borderRadius: BorderRadius.circular(8.r),
               boxShadow: [
                 BoxShadow(
@@ -40,7 +42,7 @@ class GridCard extends StatelessWidget {
               children: [
                Image.asset(icon,width: 34.w,height: 34.h,),
                 SizedBox(height: 20.h,),
-                Text(text,style: AppTheme.cardText,)
+                Text(text,style: textStyle ?? AppTheme.cardText,)
               ],
             ),
           ),

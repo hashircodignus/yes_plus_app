@@ -109,6 +109,12 @@ class AppTheme {
       fontSize: 16.sp,
       fontWeight: FontWeight.w500);
 
+  static TextStyle buttonLightText = TextStyle(
+      color: lightColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 16.sp,
+      fontWeight: FontWeight.w400);
+
   static TextStyle buttonBlackText = TextStyle(
       color: textColor,
       fontFamily: montserratFont.fontFamily,
