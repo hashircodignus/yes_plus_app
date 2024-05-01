@@ -127,8 +127,20 @@ class AppTheme {
       fontSize: 16.sp,
       fontWeight: FontWeight.w700);
 
+  static TextStyle completedNum = TextStyle(
+      color: textColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 18.sp,
+      fontWeight: FontWeight.w400);
+
   static TextStyle tableNum = TextStyle(
       color: textColor,
+      fontFamily: montserratFont.fontFamily,
+      fontSize: 18.sp,
+      fontWeight: FontWeight.w600);
+
+  static TextStyle tableNumGreen = TextStyle(
+      color: tableContainerGreen,
       fontFamily: montserratFont.fontFamily,
       fontSize: 18.sp,
       fontWeight: FontWeight.w600);
