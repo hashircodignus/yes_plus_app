@@ -1,8 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yes_plus/src/presentation/completed_screen/completed_page.dart';
 import 'package:yes_plus/src/presentation/dine_screen/dine_page.dart';
 import 'package:yes_plus/src/presentation/home_screen/widget/grid_card.dart';
+import 'package:yes_plus/src/presentation/login_screen/login_page.dart';
 import 'package:yes_plus/src/presentation/running_kot_screen/running_kot_page.dart';
 import 'package:yes_plus/src/utils/asset_resources.dart';
 import 'package:yes_plus/src/utils/theme.dart';
@@ -25,12 +27,17 @@ class _HomePageState extends State<HomePage> {
           padding: EdgeInsets.only(top: 60.h,left: 20.w),
           child: Column(
             children: [
-              Row(
-                children: [
-                  Image.asset(AssetResources.logOut,scale: 4.sp,),
-                  SizedBox(width: 10.w,),
-                  Text("Logout",style: AppTheme.drawerText,)
-                ],
+              GestureDetector(
+                onTap: (){
+                  Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>const LoginPage()), (route) => false);
+                },
+                child: Row(
+                  children: [
+                    Image.asset(AssetResources.logOut,scale: 4.sp,),
+                    SizedBox(width: 10.w,),
+                    Text("Logout",style: AppTheme.drawerText,)
+                  ],
+                ),
               )
             ],
           ),

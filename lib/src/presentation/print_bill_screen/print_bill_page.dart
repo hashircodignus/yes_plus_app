@@ -16,9 +16,9 @@ class PrintBillPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppTheme.backColor,
         automaticallyImplyLeading: false,
-        bottom: PreferredSize(preferredSize: Size.square(200.h),
+        bottom: PreferredSize(preferredSize: Size.square(178.7.h),
             child: Container(
-          height: 243.h,
+          height: 230.h,
           width: double.infinity,
           decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -38,6 +38,7 @@ class PrintBillPage extends StatelessWidget {
                   alignment:const Alignment(-0.85, 0),
                   child:  GestureDetector(
                       onTap: (){
+                        Navigator.pop(context);
                         Navigator.pop(context);
                       },
                       child: const Icon(Icons.arrow_back,color: AppTheme.backColor,))),
