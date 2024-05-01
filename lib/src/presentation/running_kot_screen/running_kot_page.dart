@@ -47,16 +47,12 @@ class _RunningKOTPageState extends State<RunningKOTPage> {
                   ],
                 ),
               ),
-              Expanded(
+              const Expanded(
                 child: TabBarView(
                     children: [
-                     const DineInDataWidget(isDineIn: true,),
-                     const DineInDataWidget(isTakeAway: true,),
-                      Container(
-                        child: const Center(
-                          child: Text('DELIVERY',style: TextStyle(fontSize: 40),),
-                        ),
-                      ),
+                     DineInDataWidget(isDineIn: true,),
+                     DineInDataWidget(isTakeAway: true,),
+                     DineInDataWidget(isDelivery: true,isTakeAway: true,),
                     ]
                 ),
               ),
