@@ -21,7 +21,7 @@ class ButtonWidget extends StatelessWidget {
             color: color,
             borderRadius: BorderRadius.circular(8.r)
         ),
-        child: Center(child: Text(buttonTextContent,style: AppTheme.buttonText,)),
+        child: Center(child: Text(buttonTextContent,style: AppTheme.textButton,)),
       ),
     );
   }

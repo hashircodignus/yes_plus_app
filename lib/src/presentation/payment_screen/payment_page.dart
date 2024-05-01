@@ -34,9 +34,9 @@ class _PaymentPageState extends State<PaymentPage> {
       appBar: AppBar(
         backgroundColor: AppTheme.backColor,
         automaticallyImplyLeading: false,
-        bottom: PreferredSize(preferredSize: Size.square(120.h), child:
+        bottom: PreferredSize(preferredSize: Size.square(114.h), child:
         Container(
-          height: 171.3.h,
+          height: 168.h,
           width: double.infinity,
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -84,12 +84,11 @@ class _PaymentPageState extends State<PaymentPage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              height: 335.h,
               child: Column( crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(height: 20.h,),
+                  SizedBox(height: 10.h,),
                   Text('Payment Via',style: AppTheme.sectionText,),
-                  SizedBox(height: 20.h,),
+                  SizedBox(height: 10.h,),
                   GridView(
                     gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
                         childAspectRatio: 1.2,
@@ -120,9 +119,9 @@ class _PaymentPageState extends State<PaymentPage> {
             ),
             if(isCashSelected)
               TextFormField(
-                // focusNode: cashFocusNode,
-                // autofocus: true,
-                style: AppTheme.sectionText,
+                focusNode: cashFocusNode,
+                autofocus: true,
+                style: AppTheme.blackTextButton,
                 cursorColor: AppTheme.textColor,
                 decoration:  InputDecoration(
                   enabledBorder: OutlineInputBorder(

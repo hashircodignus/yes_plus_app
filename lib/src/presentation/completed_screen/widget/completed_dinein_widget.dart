@@ -21,7 +21,7 @@ class CompletedDineInWidget extends StatelessWidget {
               itemBuilder: (BuildContext context, int index){
               return Container(
                 padding: EdgeInsets.symmetric(horizontal: 15.w,vertical: 15.h),
-                height: 106.h,
+                height: 110.h,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: AppTheme.backColor,
@@ -66,7 +66,7 @@ class CompletedDineInWidget extends StatelessWidget {
                     Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         RichText(text: TextSpan(
-                          text: 'Sec1  ',style: AppTheme.buttonBlackText,
+                          text: 'Sec1  ',style: AppTheme.blackTextButton,
                           children: [
                             TextSpan(
                               text: 'T1',style: AppTheme.sectionText

@@ -22,7 +22,7 @@ class LoginTextField extends StatelessWidget {
       child: Column(crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(titleText,style: AppTheme.titleText,),
+          Text(titleText,style: AppTheme.textTitle,),
           Container(
             decoration: BoxDecoration(
              // color: AppTheme.backColor,
@@ -37,6 +37,7 @@ class LoginTextField extends StatelessWidget {
               obscureText: obscureText ?? false,
               obscuringCharacter: '*',
               cursorColor: AppTheme.textColor,
+              style: AppTheme.blackTextButton,
               decoration: InputDecoration(
                 prefixIcon: prefixIcon,
                 suffixIcon: suffixIcon,
@@ -48,7 +49,7 @@ class LoginTextField extends StatelessWidget {
                     borderRadius: BorderRadius.circular(8.r),
                     borderSide: BorderSide(color: AppTheme.borderColor,width: 0.5.w)
                 ),
-                contentPadding: EdgeInsets.symmetric(vertical: 16.h),
+                contentPadding: EdgeInsets.symmetric(vertical: 16.h,horizontal: 20.w),
                 isDense: true,
               ),
             ),

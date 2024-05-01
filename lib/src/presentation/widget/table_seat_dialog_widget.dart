@@ -21,7 +21,7 @@ class _TableSeatDialogWidgetState extends State<TableSeatDialogWidget> {
     return AlertDialog(
       contentPadding: EdgeInsets.zero,
       content: Container(
-        height: 342.h,
+        height: 345.h,
         width: 320.w,
         decoration: BoxDecoration(
           color: AppTheme.backColor,
@@ -141,7 +141,7 @@ class _TableSeatDialogWidgetState extends State<TableSeatDialogWidget> {
               onPressed: (){
                 Navigator.pop(context);
               },
-              color: isSelected ? AppTheme.buttonColor : AppTheme.backColor, style:isSelected ? AppTheme.buttonText : AppTheme.buttonBlackText,
+              color: isSelected ? AppTheme.buttonColor : AppTheme.backColor, style:isSelected ? AppTheme.textButton : AppTheme.blackTextButton,
               ),
             )
           ],

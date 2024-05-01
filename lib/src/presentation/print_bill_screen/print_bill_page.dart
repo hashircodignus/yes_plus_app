@@ -16,9 +16,9 @@ class PrintBillPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppTheme.backColor,
         automaticallyImplyLeading: false,
-        bottom: PreferredSize(preferredSize: Size.square(178.7.h),
+        bottom: PreferredSize(preferredSize: Size.square(180.h),
             child: Container(
-          height: 230.h,
+          height: 234.h,
           width: double.infinity,
           decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -63,8 +63,8 @@ class PrintBillPage extends StatelessWidget {
                         SizedBox(height: 12.h,),
                         Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text('Table Number:',style: AppTheme.buttonText,),
-                            Text('T1',style: AppTheme.buttonText,),
+                            Text('Table Number:',style: AppTheme.textButton,),
+                            Text('T1',style: AppTheme.textButton,),
                           ],
                         )
                       ],
