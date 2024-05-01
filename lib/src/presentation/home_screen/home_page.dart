@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:yes_plus/src/presentation/completed_screen/completed_page.dart';
 import 'package:yes_plus/src/presentation/dine_screen/dine_page.dart';
 import 'package:yes_plus/src/presentation/home_screen/widget/grid_card.dart';
 import 'package:yes_plus/src/presentation/running_kot_screen/running_kot_page.dart';
@@ -70,7 +71,9 @@ class _HomePageState extends State<HomePage> {
                GridCard(icon: AssetResources.running, text: 'Running KOT',onTap:()=>
                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const RunningKOTPage())),),
               const GridCard(icon: AssetResources.pending, text: 'Pending Statement',),
-              const GridCard(icon: AssetResources.completed, text: 'Completed',),
+               GridCard(icon: AssetResources.completed, text: 'Completed',onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const CompletedPage()));
+              },),
             ],
             ),
           ),

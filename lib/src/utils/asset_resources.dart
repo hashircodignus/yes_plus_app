@@ -8,6 +8,7 @@ class AssetResources{
   static const completed = "assets/images/completed.png";
   static const company = "assets/images/al_hawaj.png";
   static const cash = "assets/images/cash_icon.png";
+  static const cashGreen = "assets/images/cash_green.png";
   static const cashWhite = "assets/images/cash_white.png";
   static const moveTable = "assets/images/move_table.png";
   static const printBill = "assets/images/print_bill.png";
