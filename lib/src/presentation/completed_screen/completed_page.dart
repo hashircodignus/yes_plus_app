@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:yes_plus/src/presentation/completed_screen/widget/completed_delivery_widget.dart';
 import 'package:yes_plus/src/presentation/completed_screen/widget/completed_dinein_widget.dart';
+import 'package:yes_plus/src/presentation/completed_screen/widget/completed_takeaway_widget.dart';
 import '../../utils/theme.dart';
-import '../widget/dine_in_data_widget.dart';
 import '../widget/tab_widget.dart';
 
 class CompletedPage extends StatelessWidget {
@@ -47,8 +48,8 @@ class CompletedPage extends StatelessWidget {
                 child: TabBarView(
                     children: [
                       CompletedDineInWidget(),
-                      DineInDataWidget(isTakeAway: true,),
-                      DineInDataWidget(isDelivery: true,isTakeAway: true,),
+                      CompletedTakeAwayWidget(),
+                      CompletedDeliveryWidget(),
                     ]
                 ),
               ),
