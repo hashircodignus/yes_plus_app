@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   AppTheme._();
@@ -17,149 +16,179 @@ class AppTheme {
   static const Color timeRedColor = Color(0xffAB0303);
 
 
-  static final montserratFont = GoogleFonts.montserrat();
+ // static final montserratFont = GoogleFonts.montserrat();
 
   static TextStyle timeCardText = TextStyle(
       color: backColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 8.sp,
       fontWeight: FontWeight.w400);
 
   static TextStyle littleText = TextStyle(
       color: textColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 8.sp,
       fontWeight: FontWeight.w400);
 
   static TextStyle seatText = TextStyle(
       color: iconColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 10.sp,
       fontWeight: FontWeight.w400);
 
   static TextStyle seatRedText = TextStyle(
       color: timeRedColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 10.sp,
       fontWeight: FontWeight.w400);
 
-  static TextStyle smallText = TextStyle(
-      color: iconColor,
-      fontFamily: montserratFont.fontFamily,
-      fontSize: 12.sp,
-      fontWeight: FontWeight.w300);
+  // static TextStyle smallText = TextStyle(
+  //     color: iconColor,
+  //     fontFamily: 'Montserrat',
+  //     fontSize: 12.sp,
+  //     fontWeight: FontWeight.w300);
+
+  static TextStyle textSmall = TextStyle(
+    color: iconColor,
+    fontFamily:'Montserrat',
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w300);
 
   static TextStyle cardText = TextStyle(
       color: textColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 12.sp,
       fontWeight: FontWeight.w400);
 
   static TextStyle cardWhiteText = TextStyle(
       color: backColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 12.sp,
       fontWeight: FontWeight.w400);
 
   static TextStyle lightText = TextStyle(
       color: lightColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 12.sp,
       fontWeight: FontWeight.w400);
 
-  static TextStyle titleText = TextStyle(
-      color: textColor,
-      fontFamily: montserratFont.fontFamily,
-      fontSize: 14.sp,
-      fontWeight: FontWeight.w300);
+  // static TextStyle titleText = TextStyle(
+  //     color: textColor,
+  //     fontFamily: 'Montserrat',
+  //     fontSize: 14.sp,
+  //     fontWeight: FontWeight.w300);
+
+  static TextStyle textTitle = TextStyle(
+    color: textColor,
+    fontFamily:'Montserrat',
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w300);
 
   static TextStyle titleWhiteText = TextStyle(
       color: backColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 14.sp,
       fontWeight: FontWeight.w300);
 
   static TextStyle tableNoText = TextStyle(
       color: backColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 14.sp,
       fontWeight: FontWeight.w400);
 
-  static TextStyle tapText = TextStyle(
-      color: iconColor,
-      fontFamily: montserratFont.fontFamily,
-      fontSize: 14.sp,
-      fontWeight: FontWeight.w500);
+  // static TextStyle tapText = TextStyle(
+  //     color: iconColor,
+  //     fontFamily: 'Montserrat',
+  //     fontSize: 14.sp,
+  //     fontWeight: FontWeight.w500);
+
+  static TextStyle textTap = TextStyle(
+    color: iconColor,
+    fontFamily:'Montserrat',
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500);
 
   static TextStyle bottomText = TextStyle(
       color: backColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 14.sp,
       fontWeight: FontWeight.w500);
 
   static TextStyle bottomBlackText = TextStyle(
       color: textColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 14.sp,
       fontWeight: FontWeight.w500);
 
-  static TextStyle buttonText = TextStyle(
-      color: backColor,
-      fontFamily: montserratFont.fontFamily,
-      fontSize: 16.sp,
-      fontWeight: FontWeight.w500);
+  // static TextStyle buttonText = TextStyle(
+  //     color: backColor,
+  //     fontFamily:'Montserrat',
+  //     fontSize: 16.sp,
+  //     fontWeight: FontWeight.w500);
+
+  static TextStyle textButton = TextStyle(
+    color: backColor,
+    fontFamily:'Montserrat',
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500);
 
   static TextStyle buttonLightText = TextStyle(
       color: lightColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily:'Montserrat',
       fontSize: 16.sp,
       fontWeight: FontWeight.w400);
 
-  static TextStyle buttonBlackText = TextStyle(
-      color: textColor,
-      fontFamily: montserratFont.fontFamily,
-      fontSize: 16.sp,
-      fontWeight: FontWeight.w500);
+  // static TextStyle buttonBlackText = TextStyle(
+  //     color: textColor,
+  //     fontFamily:'Montserrat',
+  //     fontSize: 16.sp,
+  //     fontWeight: FontWeight.w500);
+
+  static TextStyle blackTextButton = TextStyle(
+    color: textColor,
+    fontFamily:'Montserrat',
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w500);
 
   static TextStyle sectionText = TextStyle(
       color: textColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily:'Montserrat',
       fontSize: 16.sp,
       fontWeight: FontWeight.w700);
 
   static TextStyle completedNum = TextStyle(
       color: textColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily:'Montserrat',
       fontSize: 18.sp,
       fontWeight: FontWeight.w400);
 
   static TextStyle tableNum = TextStyle(
       color: textColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily:'Montserrat',
       fontSize: 18.sp,
       fontWeight: FontWeight.w600);
 
   static TextStyle tableNumGreen = TextStyle(
       color: tableContainerGreen,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily:'Montserrat',
       fontSize: 18.sp,
       fontWeight: FontWeight.w600);
 
   static TextStyle appBarText = TextStyle(
       color: iconColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily:'Montserrat',
       fontSize: 20.sp,
       fontWeight: FontWeight.w500);
 
   static TextStyle drawerText = TextStyle(
       color: backColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily:'Montserrat',
       fontSize: 20.sp,
       fontWeight: FontWeight.w500);
 
   static TextStyle largeNoText = TextStyle(
       color: backColor,
-      fontFamily: montserratFont.fontFamily,
+      fontFamily: 'Montserrat',
       fontSize: 35.sp,
       fontWeight: FontWeight.w500);
 }

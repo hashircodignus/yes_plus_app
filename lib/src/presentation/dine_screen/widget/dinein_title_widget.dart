@@ -83,7 +83,7 @@ class DineInTitleWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("DINE IN",style: AppTheme.buttonText,),
+            Text("DINE IN",style: AppTheme.textButton,),
             const Icon(Icons.keyboard_arrow_down_rounded,color: AppTheme.backColor,)
           ],
         ),

@@ -22,7 +22,7 @@ class _TakeAwayDialogWidgetState extends State<TakeAwayDialogWidget> {
     return AlertDialog(
       contentPadding: EdgeInsets.zero,
       content: Container(
-        height: 283.h,
+        height: 300.h,
         width: 320.w,
         decoration: BoxDecoration(
           color: AppTheme.backColor,

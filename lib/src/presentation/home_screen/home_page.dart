@@ -62,7 +62,6 @@ class _HomePageState extends State<HomePage> {
           children: [
             SizedBox(height: 5.h,),
           Container(
-            height: 275.h,
             child: GridView(
               gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
                 childAspectRatio: 1.2,
@@ -94,7 +93,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             SizedBox(height: 40.h,),
-            Text("Version 10.00",style: AppTheme.smallText,)
+            Text("Version 10.00",style: AppTheme.textSmall,)
           ],
         ),
       ),

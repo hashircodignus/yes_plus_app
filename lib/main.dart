@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
        return MaterialApp(
          title: 'Flutter Demo',
          theme: ThemeData(
+           fontFamily: 'Montserrat',
            appBarTheme: const AppBarTheme(
              systemOverlayStyle: SystemUiOverlayStyle(statusBarColor: Colors.black)
            ),
