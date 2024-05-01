@@ -21,7 +21,7 @@ class ButtonWidget extends StatelessWidget {
             color: color,
             borderRadius: BorderRadius.circular(8.r)
         ),
-        child: Center(child: Text(buttonTextContent,style: AppTheme.textButton,)),
+        child: Center(child: Text(buttonTextContent,style: TextStyle(color: AppTheme.backColor,fontFamily: 'Montserrat',fontSize: 16.sp,fontWeight: FontWeight.w500),)),
       ),
     );
   }

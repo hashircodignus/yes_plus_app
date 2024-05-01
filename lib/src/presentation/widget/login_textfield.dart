@@ -23,7 +23,11 @@ class LoginTextField extends StatelessWidget {
       child: Column(crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(titleText,style: AppTheme.textTitle,),
+          Text(titleText,style: TextStyle(
+              color: AppTheme.textColor,
+              fontFamily: 'Montserrat',
+              fontSize: 12.sp,
+              fontWeight: FontWeight.w400)),
           Container(
             decoration: BoxDecoration(
              // color: AppTheme.backColor,
@@ -39,7 +43,11 @@ class LoginTextField extends StatelessWidget {
               keyboardType: keyboardType ?? TextInputType.name,
               obscuringCharacter: '*',
               cursorColor: AppTheme.textColor,
-              style: AppTheme.blackTextButton,
+              style:  TextStyle(
+                  color: AppTheme.textColor,
+                  fontFamily:'Montserrat',
+                  fontSize: 16.sp,
+                  fontWeight: FontWeight.w500),
               decoration: InputDecoration(
                 prefixIcon: prefixIcon,
                 suffixIcon: suffixIcon,

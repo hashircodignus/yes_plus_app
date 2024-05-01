@@ -66,13 +66,25 @@ class _LoginPageState extends State<LoginPage> {
                   }, color: AppTheme.tableContainerGreen,),
                   SizedBox(height: 30.h,),
                   RichText(text: TextSpan(
-                    text: "Doesn't have an account?  " ,style: AppTheme.textTitle,
+                    text: "Doesn't have an account?  " ,style: TextStyle(
+                      color: AppTheme.textColor,
+                      fontFamily:'Montserrat',
+                      fontSize: 14.sp,
+                      fontWeight: FontWeight.w300),
                     children: [TextSpan(
-                      text: "Contact",style: AppTheme.textTap
+                      text: "Contact",style: TextStyle(
+                        color: AppTheme.iconColor,
+                        fontFamily:'Montserrat',
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w500)
                     )]
                   )),
                   SizedBox(height: 40.h,),
-                  Text("Version 10.00",style: AppTheme.textSmall,)
+                  Text("Version 10.00",style:TextStyle(
+                      color: AppTheme.iconColor,
+                      fontFamily:'Montserrat',
+                      fontSize: 12.sp,
+                      fontWeight: FontWeight.w300),)
                 ],
               ),
             ),
