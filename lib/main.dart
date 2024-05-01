@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:yes_plus/src/presentation/login_screen/login_page.dart';
+import 'package:yes_plus/src/presentation/payment_screen/payment_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
          theme: ThemeData(
            useMaterial3: true,
          ),
-         home: const LoginPage(),
+         home: const PaymentPage(),
          debugShowCheckedModeBanner: false,
        );
       },
