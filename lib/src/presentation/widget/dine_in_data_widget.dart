@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:yes_plus/src/presentation/widget/dine_in_dialog_widget.dart';
 import 'package:yes_plus/src/presentation/widget/table_seat_dialog_widget.dart';
+import 'package:yes_plus/src/presentation/widget/takeaway_dialog_widget.dart';
 import 'package:yes_plus/src/utils/asset_resources.dart';
 import '../../utils/theme.dart';
 
 class DineInDataWidget extends StatefulWidget {
   final bool? isDineIn;
   final bool? isTakeAway;
+  final bool? isDelivery;
   const DineInDataWidget({
-    super.key,  this.isDineIn,  this.isTakeAway,
+    super.key,  this.isDineIn,  this.isTakeAway, this.isDelivery,
   });
 
   @override
@@ -56,9 +58,10 @@ class _DineInDataWidgetState extends State<DineInDataWidget> {
                             if(widget.isDineIn == true) {
                               return const DineInDialogWidget();
                             } else if(widget.isTakeAway == true){
-                              return const TableSeatDialogWidget();
-                            }
-                            else {
+                              return const TakeAwayDialogWidget();
+                            }else if(widget.isDelivery == true){
+                              return const TakeAwayDialogWidget();
+                            } else {
                               return const TableSeatDialogWidget();
                             }
                           });
@@ -93,7 +96,9 @@ class _DineInDataWidgetState extends State<DineInDataWidget> {
                               SizedBox(height: 2.h,),
                               Text('T1',style: AppTheme.tableNum,),
                               SizedBox(height: 3.h,),
-                              Text('234',style:AppTheme.lightText ,),
+                              widget.isDelivery == true ?
+                              Text('Hrishi',style:AppTheme.lightText ,)
+                              :Text('234',style:AppTheme.lightText ,),
                               SizedBox(height:7.h,),
                               Container(
                                 height: 20.h,
@@ -183,7 +188,9 @@ class _DineInDataWidgetState extends State<DineInDataWidget> {
                                 SizedBox(height: 2.h,),
                                 Text('T1',style: AppTheme.tableNum,),
                                 SizedBox(height: 3.h,),
-                                Text('234',style:AppTheme.lightText ,),
+                                widget.isDelivery == true ?
+                                Text('Hrishi',style:AppTheme.lightText ,)
+                                    :Text('234',style:AppTheme.lightText ,),
                                 SizedBox(height:7.h,),
                                 Container(
                                   height: 20.h,
@@ -274,7 +281,9 @@ class _DineInDataWidgetState extends State<DineInDataWidget> {
                                 SizedBox(height: 2.h,),
                                 Text('T1',style: AppTheme.tableNum,),
                                 SizedBox(height: 3.h,),
-                                Text('234',style:AppTheme.lightText ,),
+                                widget.isDelivery == true ?
+                                Text('Hrishi',style:AppTheme.lightText ,)
+                                    :Text('234',style:AppTheme.lightText ,),
                                 SizedBox(height:7.h,),
                                 Container(
                                   height: 20.h,
@@ -364,7 +373,9 @@ class _DineInDataWidgetState extends State<DineInDataWidget> {
                                 SizedBox(height: 2.h,),
                                 Text('T1',style: AppTheme.tableNum,),
                                 SizedBox(height: 3.h,),
-                                Text('234',style:AppTheme.lightText ,),
+                                widget.isDelivery == true ?
+                                Text('Hrishi',style:AppTheme.lightText ,)
+                                    :Text('234',style:AppTheme.lightText ,),
                                 SizedBox(height:7.h,),
                                 Container(
                                   height: 20.h,
