@@ -34,9 +34,9 @@ class _PaymentPageState extends State<PaymentPage> {
       appBar: AppBar(
         backgroundColor: AppTheme.backColor,
         automaticallyImplyLeading: false,
-        bottom: PreferredSize(preferredSize: Size.square(111.h), child:
+        bottom: PreferredSize(preferredSize: Size.square(120.h), child:
         Container(
-          height: 160.h,
+          height: 171.3.h,
           width: double.infinity,
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -57,6 +57,7 @@ class _PaymentPageState extends State<PaymentPage> {
                     alignment:const Alignment(-0.85, 0),
                     child:  GestureDetector(
                         onTap: (){
+                          Navigator.pop(context);
                           Navigator.pop(context);
                         },
                         child: const Icon(Icons.arrow_back,color: AppTheme.backColor,))),

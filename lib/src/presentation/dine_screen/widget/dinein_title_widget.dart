@@ -34,35 +34,35 @@ class DineInTitleWidget extends StatelessWidget {
                   children: [
                     Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("TYPE CHANGE",style: AppTheme.bottomText,),
-                        Text("X",style: AppTheme.bottomText,),
+                        Text("TYPE CHANGE",style: AppTheme.bottomBlackText,),
+                        Text("X",style: AppTheme.bottomBlackText,),
                       ],
                     ),
                     SizedBox(height: 25.h,),
                     Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("DINE IN",style: AppTheme.bottomText,),
+                        Text("DINE IN",style: AppTheme.bottomBlackText,),
                         Icon(Icons.circle,size: 17.sp,color: Colors.green,)
                       ],
                     ),
                     SizedBox(height: 25.h,),
                     Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("TAKEAWAY",style: AppTheme.bottomText,),
+                        Text("TAKEAWAY",style: AppTheme.bottomBlackText,),
                         Icon(Icons.circle_outlined,size: 17.sp,)
                       ],
                     ),
                     SizedBox(height: 25.h,),
                     Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("DELIVERY",style: AppTheme.bottomText,),
+                        Text("DELIVERY",style: AppTheme.bottomBlackText,),
                         Icon(Icons.circle_outlined,size: 17.sp,)
                       ],
                     ),
                     SizedBox(height: 25.h,),
                     Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text("ORDER",style: AppTheme.bottomText,),
+                        Text("ORDER",style: AppTheme.bottomBlackText,),
                         Icon(Icons.circle_outlined,size: 17.sp,)
                       ],
                     ),

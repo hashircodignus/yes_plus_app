@@ -72,10 +72,12 @@ class _TakeAwayDialogWidgetState extends State<TakeAwayDialogWidget> {
                         text: 'View KOT',),
                       GridCard(icon: AssetResources.printBill, text: 'Print Bill', onTap: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>const PrintBillPage()));
+
                       },
                       ),
                       GridCard(icon: AssetResources.printPay, text: 'Print & Pay',onTap: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>const PaymentPage()));
+
                       }),
                     ],
                   ),
